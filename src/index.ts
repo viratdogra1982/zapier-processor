@@ -1,11 +1,11 @@
 import { PrismaClient } from "@prisma/client";
 import { Kafka } from "kafkajs";
 
-const TOPIC_NAME = "quickstart-events";
+const TOPIC_NAME = "zap-events";
 const client = new PrismaClient();
 
 const kafka = new Kafka({
-    clientId: "outbox proccessor",
+    clientId: "outbox-proccessor",
     brokers: ["localhost:9092"],
   });
 
